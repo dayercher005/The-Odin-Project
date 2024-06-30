@@ -17,7 +17,7 @@ function computerChoice(){
 }
 
 
-rock.onclick =() => {
+rock.addEventListener("click", () => {
     computerChoice();
     if(computerChoice() == "Paper"){
         click.textContent = "Computer chose Paper. Paper beats Rock, you lose...";
@@ -31,10 +31,10 @@ rock.onclick =() => {
     yourScore.textContent = `Your Score: ${YourScore}`;
     computerScore.textContent = `Computer Score: ${ComputerScore}`;
     checkScore();
-}
+});
 
 
-scissors.onclick = () => {
+scissors.addEventListener("click", () => {
     computerChoice();
     if(computerChoice() == "Paper"){
         click.textContent = "Computer chose Paper. Scissors beats Paper, you win!";
@@ -48,10 +48,10 @@ scissors.onclick = () => {
     yourScore.textContent = `Your Score: ${YourScore}`;
     computerScore.textContent = `Computer Score: ${ComputerScore}`;
     checkScore();
-}
+});
 
 
-paper.onclick = () => {
+paper.addEventListener("click", () => {
     computerChoice();
     if(computerChoice() == "Paper"){
         click.textContent = "Computer chose Paper. Its a draw!";
@@ -65,7 +65,7 @@ paper.onclick = () => {
     yourScore.textContent = `Your Score: ${YourScore}`;
     computerScore.textContent = `Computer Score: ${ComputerScore}`;
     checkScore();
-}
+});
 
 
 reset.onclick = () => {
