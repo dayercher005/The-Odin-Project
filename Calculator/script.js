@@ -47,7 +47,7 @@ digits.forEach((digit) =>{
             }else{
                 display.textContent += digit.value
             }
-
+            boolean_ = true;
     })
 })
 
@@ -121,8 +121,6 @@ operatorButtons.forEach((Operator) => {
             }
         } 
         operator = Operator.value;
-        boolean_ = true;
-    
     })
 })
 
