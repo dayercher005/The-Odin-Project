@@ -10,6 +10,7 @@
 
 *{
     margin:0;
+    font-family: Roboto;
 }
 
 .dashboardContainer{
@@ -22,10 +23,18 @@
 .sidebar{
     display: grid;
     grid-row: 1/3;
+    grid-template-rows: 1fr 4fr 3fr;
+}
+
+.sidebarBottom{
+  display: grid;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .sidebarTop{
-   
+   display: grid;
+   margin-bottom: 2rem;
 }
 
 #dashboardHeader{
@@ -40,8 +49,77 @@ a{
     font-weight: var(--font-weight);
     font-family: Roboto;
     font-size: 1.2em;
+    
 }
 
 .sidebar{
     background-color: #38bdf8;
+}
+
+.styleContainer{
+  font-weight: bold;
+}
+
+span{
+  font-weight: bold;
+}
+
+input{
+  background-color: #cbd5e1;
+  border-radius: 15px;
+  border: none;
+  width: 40vw;
+  
+}
+
+.searchbarContainer{
+  display: grid;
+  grid-template-column: 1fr 7fr 1fr 1fr 2fr;
+  grid-template-column: 1fr;
+}
+
+button{
+  background-color: #0ea5e9;
+  color: #f8fafc;
+  border: none;
+  border-radius: 20px;
+  width: 7vw;
+  height: 10vh;
+  padding: ;
+}
+
+.actionContainer{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+}
+
+.contentContainer{
+  background-color: #e2e8f0;
+}
+
+.contentHeader{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projectContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row: 1/3;
+  gap: 20px;
+ 
+}
+
+.cards{
+  background-color: #f8fafc;
+  width: 23vw;
+  margin: 15px;
+  padding: 15px;
+}
+
+.mainContainer{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
