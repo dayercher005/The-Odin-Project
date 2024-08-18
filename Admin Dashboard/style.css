@@ -1,0 +1,265 @@
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+}
+
+:root{
+    --font-color: #f8fafc;
+    --font-weight: bold;
+}
+
+*{
+    margin:0;
+    font-family: Roboto;
+}
+
+.dashboardContainer{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  grid-template-rows: 1fr 3fr;
+  height: 100vh;
+
+}
+
+.sidebar{
+    display: grid;
+    grid-row: 1/3;
+    grid-template-rows: 0.3fr 1.5fr 1.9fr;
+    text-align: center;
+}
+
+.sidebarBottom{
+  display: grid;
+  height: 35%;
+  grid-template-columns: 1fr 8fr;
+  margin-top: 0;
+}
+
+.sidebarTop{
+   display: grid;
+   height: 60%;
+   grid-template-columns: 1fr 10fr;
+   margin-top: 3vh;
+}
+
+#dashboardHeader{
+    font-family: Roboto;
+    color: var(--font-color);
+    font-size: 2em;
+    font-weight: var(--font-weight);
+    margin-right: 2vw;
+    margin-top: 2vh;
+}
+
+#dashboardHeading{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+}
+
+a{
+    color: var(--font-color);
+    font-weight: var(--font-weight);
+    font-family: Roboto;
+    font-size: 1.35em;
+    margin-right: 2vw;
+}
+
+
+.sidebar{
+    background-color: #38bdf8;
+}
+
+.styleContainer{
+  font-weight: bold;
+}
+
+span{
+  font-family: sans-serif;
+  font-weight: var(--font-weight);
+  font-size: 1.3rem;
+}
+
+input{
+  background-color: #cbd5e1;
+  border-radius: 20px;
+  border: none;
+  width: 45vw;
+  height: 1.5vh;
+  padding: 5px;
+}
+
+.searchbarContainer{
+  display: grid;
+  grid-template-columns: 0.1fr 13fr 0.6fr 0.9fr 2fr;
+  margin-top: 2%;
+  margin-left: 4.5%; 
+  height: 8vh;
+}
+
+button{
+  background-color: #0ea5e9;
+  color: #f8fafc;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 3vh;
+  font-weight: var(--font-weight);
+  font-size: 1.1em;
+  margin-top: 5%;
+  margin-right: -1vw;
+}
+
+button:hover{
+  background-color: #0284c7;
+}
+
+.actionContainer{
+  display: grid;
+  grid-template-columns: 0.3fr 3fr 0.5fr 0.5fr 0.5fr;
+  margin-left: 4%;
+}
+
+.contentContainer{
+  background-color: #e2e8f0;
+}
+
+.contentHeader{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projectContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 1/3;
+}
+
+.cards{
+  background-color: #f8fafc;
+  padding: 45px;
+  border-radius: 15px;
+  margin-left: 10%;
+  margin-bottom: 5vh;
+  border-left: 15px solid #fcd34d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainContainer{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+svg{
+  width: 30px;
+}
+
+.sidebarImages{
+  margin-left: 2vw;
+  fill: var(--font-color);
+}
+
+#dashboard{
+  width: 40px;
+  margin-left: 1.5vw;
+  margin-top: 2vh;
+  fill: var(--font-color);
+}
+
+#yourProjects{
+    margin-left: 15px;
+}
+
+.announcementContainer{
+    background-color: var(--font-color);
+    border-radius: 15px;
+    margin-right: 3vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 3.5vw;
+}
+
+.announcements{
+    padding: 35px;
+    margin: 10px;
+    display: inline-block; 
+}
+
+.announcements:not(:last-child){
+    border-bottom: 1px solid hsl(0, 0%, 48%, 50%);
+    
+}
+
+#emails{
+  background-color: var(--font-color);
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trendingContainer{
+  margin-right: 3vw;
+  margin-left: 3.5vw;
+}
+
+#Trending{
+  font-size: 1.1em;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.styleContainer{
+  font-family: sans-serif;
+  margin-bottom: 1vh;
+  margin-top: 3vh;
+  font-size: 1.3em;
+}
+
+img{
+  width: 5.5vh;
+  height: 5.5vh;
+  border-radius: 100%;
+}
+
+#firstPFP{
+  margin-top: -1vh;
+}
+
+#secondPFP{
+  width: 8vh;
+  height: 8vh; 
+}
+
+#Morgan{
+  margin-top: 3%;
+}
+
+.profileContainer{
+  height: 26vh;
+}
+
+#opening{
+  font-size: 2rem;
+}
+
+#yourProjects{
+  margin-left: 5%;
+}
+
+#announcementHeader{
+  margin-left: 3.5vw;
+}
+
+.mainText{
+  height: 25vh;
+}
+
+.cardIconContainer{
+  margin-left: 65%;
+}
+
