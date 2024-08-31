@@ -112,6 +112,7 @@ label{
     margin: 50px;
     display: grid;
     grid-template-rows: repeat(5, 1fr);
+    margin-left: 5vw;
 }
 
 .remove:hover{
@@ -135,5 +136,5 @@ label{
 
 #bookContainer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
