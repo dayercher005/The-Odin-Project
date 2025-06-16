@@ -15,5 +15,5 @@ Some of the topics we cover include:
 
 This repo contains the TOP app which pulls in lesson content as well as front-end and back-end code. To see the actual lesson content that gets pulled in, please go to the [TOP curriculum repo](https://github.com/TheOdinProject/curriculum).
 
-Our community can be found on the [TOP Discord server](https://discord.gg/fbFCkYabZB).
+Community can be found on the [TOP Discord server](https://discord.gg/fbFCkYabZB).
 
