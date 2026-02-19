@@ -1,0 +1,10 @@
+
+<ul class="homeButtonList">
+<% for (let i = 1; i < navbarElements.length; i++) { %>
+    <li class="">
+        <a class="homeButton" href="<%= navbarElements[i].href %>">
+            <span class="homeButton"> <%= navbarElements[i].text %> </span>
+        </a>
+    </li>
+<% } %>
+</ul>

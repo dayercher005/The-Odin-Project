@@ -1,0 +1,452 @@
+/* General CSS Styling for Entire Webpage*/
+
+:root{
+    --RobotoFont: Roboto;
+    --PlayfairDisplay: Playfair Display;
+    --white: hsl(0, 0%, 96%);
+    --backgroundColor1: hsl(0, 63%, 42%);
+    --backgroundColor2: hsl(263, 41%, 64%);
+    --backgroundColor3: hsl(125, 37%, 37%);
+    --backgroundColor4: hsl(301, 39%, 52%);
+    --backgroundColor5: hsl(31, 78%, 56%);
+    --backgroundColor6: hsl(193, 60%, 60%);
+    --boxShadow: hsl(0, 2%, 45%);
+    --descriptionColor: hsl(0, 9%, 36%);
+    --wallpaperColor: hsl(171, 50%, 46%);
+    --wallpaperColor2: hsl(0, 0%, 100%);
+    --footerFontSize: 2.5rem;
+}
+
+*{
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+/* CSS Styling for Header */
+
+figure.pictureSection{
+    position: relative;
+    margin: 2% 0;
+}
+
+
+img.profileImage{
+    margin-top: 2.5%;
+}
+
+figcaption.nameText{
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    font-family: var(--PlayfairDisplay);
+    color: var(--white);
+    font-size: 3rem;
+    margin: 0;
+}
+
+header.Header{
+    max-height: 700px; 
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom right, var(--wallpaperColor) 50%, var(--wallpaperColor2) 50%);
+}
+
+
+div.aboutSection{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 1.5%;
+    width: 45%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    max-width: 800px;
+    min-height: 525px;
+}
+
+
+h1.About{
+    font-family: PlayfairDisplay;
+    font-weight: 300;
+    color: var(--descriptionColor);
+    font-size: 2.5rem;
+}
+
+
+p.dummyText{
+    padding-top: 5%;
+    font-family: 2rem;
+    line-height: 1.8;
+    color: var(--descriptionColor);
+}
+
+div.iconContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.4rem;
+    margin-top: auto;
+}
+
+
+/* CSS Styling for Main Body Content */
+
+
+h2.mainHeaderText{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 2rem;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    margin-top: auto;
+}
+
+
+section.mainBody{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: auto;
+}
+
+div.projectGridContainer{
+    display: grid;
+    grid-template: 1fr 2fr 2fr / 1fr 1fr 1fr;
+    gap: 5%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 1% 1% 2%;
+}
+
+div.projectContainer{
+    display: flex;
+    box-shadow: 20px 15px 30px var(--boxShadow);
+}
+
+div.projectContainer:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+
+
+div.screenshot{
+    text-align: center;
+    font-family: var(--PlayfairDisplay);
+    padding: 23%;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+
+div#project1{
+    background-color : var(--backgroundColor1);
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+div#project2{
+    background-color : var(--backgroundColor2);
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+div#project3{
+    background-color : var(--backgroundColor3);
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+div#project4{
+    background-color : var(--backgroundColor4);
+    grid-column: 3/3;
+    grid-row: 1/1;
+}
+
+div#project5{
+    background-color : var(--backgroundColor5);
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+div#project6{
+    background-color : var(--backgroundColor6);
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+
+div.projectName{
+    font-family: var(--PlayfairDisplay);
+}
+
+
+div.projectNameContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: var(--white);
+}
+
+p.projectDescription{
+   padding: 0 5% 20% 5%;
+   background-color: var(--white);
+   color: var(--descriptionColor);
+   margin: 0;
+}
+
+/* CSS Styling Code for Footer */
+
+footer.footerSection{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--wallpaperColor);
+    margin: 0;
+}
+
+h3.contactText{
+    font-family: var(--PlayfairDisplay);
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+div.iconFooterContainer{
+    display: flex;
+    gap: 1.6rem;
+}
+
+div.ImportantDetails{
+    padding: 0 3%;
+    color: var(--white);
+}
+
+div.contactIconContainer{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+div.mailIconContainer{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+img.footerImage{
+    margin-top: auto;
+}
+
+
+/* CSS Styling for Tablets (viewport within 1000px) */
+
+@media (max-width: 1000px){
+
+    div.aboutSection{
+        display: block;
+        margin: 0;
+        width: 90%;
+    }
+
+    header.Header{
+        position: relative;
+        display: inline-block;
+        padding: 13%;
+    }
+
+    img.profileImage{
+        display: block;
+        height: 400px;
+        width: auto;
+        object-fit: cover;
+        margin-top: 3rem;
+    }
+
+    figure.pictureSection{
+        display: inline;
+        position: relative;
+        float: left;
+        padding: 0;
+        margin: 0;
+        bottom: 5rem; 
+        right: 3rem;
+    }
+
+    figcaption.nameText{
+        display: block;
+        width: 300px;
+        font-size: 2.7rem;
+        position: absolute;
+        display: inline-block;
+        top: 1rem;
+        left: 15rem;
+    }
+
+    p.dummyText{
+        display: block;
+        padding: 0;
+    }
+
+    div.iconContainer{
+        display: none;
+    }
+
+
+    section.mainBody{
+        margin: 0;
+    }
+
+
+
+    h2.mainHeaderText{
+        grid-column: 1/3;
+        grid-row: 1/1
+    }
+
+
+    div.projectGridContainer{
+        display: grid;
+        grid-template: 1fr repeat(3, 2fr) / repeat(2, 2fr);
+        gap: 3%;
+        margin: 4%;
+    }
+
+
+    div#project1{
+        background-color : var(--backgroundColor1);
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    div#project2{
+        background-color : var(--backgroundColor2);
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    div#project3{
+        background-color : var(--backgroundColor3);
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    div#project4{
+        background-color : var(--backgroundColor4);
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    div#project5{
+        background-color : var(--backgroundColor5);
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    div#project6{
+        background-color : var(--backgroundColor6);
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+
+    div.ImportantDetails{
+        padding: 5%;
+    }
+
+    img.footerImage{
+        width: 40%;
+        height: 25%;
+    }
+
+    footer{
+        align-items: center;
+    }
+
+    img.footerImage{
+        margin-bottom: auto;
+    }
+
+}
+
+
+
+/* CSS Styling for Mobile Devices (viewport within 500px) */
+
+
+@media (max-width: 500px) {
+
+    *{
+        padding: 0;
+    }
+
+    header.Header{
+        position: static;
+        height: auto;
+    }
+
+    figure.pictureSection{
+        margin-left: auto;
+        position: relative;
+        float: none;
+        width: 90%;
+        left: 0%;
+    }
+
+    img.profileImage{
+        height: auto;
+        width: 100%;
+        position: static;
+        object-fit: cover;
+    }
+
+
+    figcaption.nameText{
+        position: absolute;
+        width: 20%;
+        font-size: 3em;
+        top: 63%;
+        left: 15%;
+    }
+
+    div.aboutSection{
+        display: block;
+        position: static;
+        margin: auto;
+        width: 90%;
+        background-color: transparent;
+    }
+
+    div.iconContainer{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2.mainHeaderText{
+        text-align: center;
+        margin-top: 40%;
+    }
+
+    div.projectGridContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    footer.footerSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img.footerImage{
+        width: 95%
+    }
+
+}
+

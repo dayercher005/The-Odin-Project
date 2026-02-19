@@ -1,0 +1,12 @@
+:root{
+  --backgroundColor: hsl(210, 74%, 84%);
+}
+
+*{
+  background-color: var(--backgroundColor);
+}
+
+.cvSections{
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="websiteContainer">
+        <div id="greeneryBackground">
+            <div id="imageContainer">
+                <img src="odinLogo.png">
+                <div id="heading">ODIN</div>
+            </div>
+
+            <div id="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></div>
+        </div>
+
+        <div id="form_Container">
+
+            <div id="formContainer">
+                <div class="text"> 
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realise your deepest dreams.</div>
+                <div class="text">
+                    Sign up now to get started.
+                </div>
+
+                <div class="text" id="extraText">
+                    You know you want to
+                </div>
+
+            </div>
+
+            <fieldset>
+                
+                <div class="text" id="formHeading">Lets do this!</div>
+
+                <form action="" method="post">
+                    <div>
+                        <label for="first_name">FIRST NAME</label><br>
+                        <input type="text" id="first_name" name="first_name" placeholder="Thor" required><br>
+
+                        <label for="user_email">EMAIL</label><br>
+                        <input type="email" id="user_email" name="email" required><br>
+
+                        <label for="user_password">PASSWORD</label><br>
+                        <input class="Password" type="password" id="user_password" name="password" minlength="8" required><br>
+                    </div>
+                    <div id="credentialContainer">
+                        <label for="last_name">LAST NAME</label><br>
+                        <input type="text" id="last_name" name="last_name" placeholder="Odinson" required><br>
+
+                        <label for="phone_number">PHONE NUMBER</label><br>
+                        <input type="tel" id="phone_number" name="phone_number" required><br>
+
+                        <label for="user_password">CONFIRM PASSWORD</label><br>
+                        <input class="Password" type="password" id="confirm_user_password" name="confirm_password" minlength="8" required><br>
+                    </div>
+
+
+                </form>
+
+            </fieldset>
+
+            <button id="button">Create Account</button>
+
+            <div id="lastLine">Already have an account? <span>Log in</span></div>
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>

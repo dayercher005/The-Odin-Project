@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="homepage">
+    <%- include('../partials/navbar', {navbarElements: navbarElements}) %>
+
+    <div class="individualGameContent">
+        <h1><%=name%></h1>
+        <h2 class="price"><%= price == 0.00 ? 'Free' : `$${price}` %></h2>
+        <h3>Description: </h4>
+        <h3 class="categories">Categories: <% categories.map(category => { %>
+            <span class="categoryStyling"><%= category %></span>
+        <% }); %></h3>
+    </div>
+
+    <div class="buttonContainer">
+        <a href="/allGames/<%= id %>/updateGame" class="updateButton">Update</a>
+        <form action="/allGames/<%= id %>/" method="POST">
+            <button class="removeButton" type="submit">Delete</button>
+        </form>
+    </div>
+  </body>
+</html>

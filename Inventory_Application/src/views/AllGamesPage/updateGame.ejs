@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="homepage">
+    <%- include('../partials/navbar', {navbarElements: navbarElements}) %>
+
+    <div class="formContainer">
+
+        <p class="formHeader">Update Existing game</p>
+
+        <form class="formContainer" action="/allGames/<%= id %>/updateGame" method="POST">
+
+          <div class="formGroupContainer">
+            <label for="updatedName" class="formLabel">Updated Name of Game *</label>
+            <input type="text" class="formInput" name="updatedName" id="updatedName" required>
+          </div>
+
+          <div class="formGroupContainer">
+            <label for="updatedPrice" class="formLabel">Price of Game *</label>
+            <input type="number" min="0.00" step="0.01" id="updatedPrice" name="updatedPrice" class="formInput" required placeholder="0.00"/>
+          </div>
+
+          <div class="formGroupContainer">
+            <label for="updateCategoryChoice" class="formLabel" >Categories</label>
+
+            <div>
+              <div class="dropdownContainer">
+                <% AvailableCategories.map(categories => { %>
+                  <div class="checkboxContainer">
+                    <input class="checkboxInput" id="updateCategoryChoice" name="updateCategoryChoice" value="<%= categories.category %>" type="checkbox">
+                    <span class="checkboxLabel"> <%= categories.category %> </span>
+                  </div>
+                <% }); %>
+                </div>
+            </div>
+        
+
+
+          <div class="formDivider"></div>
+
+          <button type="submit" class="formSubmitButton">
+            Update
+          </button>
+        </form>
+    </div>
+  </body>
+</html>

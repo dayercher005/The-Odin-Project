@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Mini-Message Board</title>
+  </head>
+
+
+  <body>
+
+    <div class="formContainer">
+        <form class="form" method="POST" action="/newMessages">
+
+            <h1><%= title %></h1>
+
+            <div class="inputContainer">
+                <label class="label" for="name">Name: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="inputContainer">
+                <label class="label" for="messageText">Message: </label>
+                <input type="text" name="messageText" id="messageText" required>
+            </div>
+
+            <input class="submitButton buttonStyling" type="submit">
+        </form>
+    </div>
+
+    <a href="/" class="allMessagesButton buttonStyling">Check messages!</a>
+
+  </body>
+</html>

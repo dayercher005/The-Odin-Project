@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="homepage">
+    <%- include('../partials/navbar', {navbarElements: navbarElements}) %>
+
+    <div class="formContainer">
+
+        <p class="formHeader">Add a new game</p>
+
+        <form class="formContainer" action="/newGame" method="POST">
+
+          <div class="formGroupContainer">
+            <label for="newName" class="formLabel">Name of Game *</label>
+            <input type="text" id="newName" name="newName" class="formInput" required placeholder="Valorant"/>
+          </div>
+
+          <div class="formGroupContainer">
+            <label for="newPrice" class="formLabel">Price of Game *</label>
+            <input type="number" min="0.00" step="0.01" id="newPrice" name="newPrice" class="formInput" required placeholder="0.00"/>
+          </div>
+
+          <div class="formGroupContainer">
+            <label for="newCategoryChoice" class="formLabel" >Categories</label>
+
+            <div>
+              <div class="dropdownContainer">
+                <% AvailableCategories.map(categories => { %>
+                  <div class="checkboxContainer">
+                    <input id="newCategoryChoice" class="checkboxInput" name="newCategoryChoice" value="<%= categories.category %>" type="checkbox">
+                    <span class="checkboxLabel"> <%= categories.category %> </span>
+                  </div>
+                <% }); %>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="formDivider"></div>
+
+          <button type="submit" class="formSubmitButton">
+            Submit
+          </button>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body[class="FormPage"]{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CSS Styling for Forms Page */
+
+.formHeaderText{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #fff 0%, #a8a8a8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.formContainer{
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 540px;
+    position: relative;
+    z-index: 1;
+}
+
+.labelContainer{
+    margin-bottom: 1.8rem;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+}
+
+.asterisk{
+    color: hsl(0, 98%, 56%);
+}
+
+input, textarea{
+    width: 100%;
+    padding: 0.95rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2.5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+textarea{
+    width: 450px
+}
+
+input:focus{
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgb(45, 110, 231);
+}
+
+
+/* CSS Styling for Error Page */
+
+button{
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #4a34ee 0%, #2363d3 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s transform;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(67, 67, 67, 0.6);
+}
+
+
+body[class="errorBody"]{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: hsl(0, 5%, 7%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.errorContainer{
+    text-align: center;
+}
+
+.errorCode{
+    font-size: 5.75rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.errorMessage{
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    font-weight: 300;
+}
+
+.errorDescription{
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.homeButton{
+    display: inline-block;
+    padding: 1.2rem 2.3rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 45px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.homeButton:hover{
+    transform: translateY(-3px);
+    background: hsla(0, 2%, 78%, 0.5);
+}
+
+/* CSS Styling for Home Page*/
+
+body[class="Homepage"]{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #0a0a0a;
+    padding: 20px;
+    position: relative;
+    overflow: scroll;
+}
+
+nav{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbarContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logoText{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.button{
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border: none;
+}
+
+.button:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 20px 5px hsla(0, 0%, 100%, 0.7);
+}
+
+.logButton{
+    background: hsl(0, 0%, 100%);
+    color: #2563eb;
+    border: 2px solid #ffffff;
+}
+
+.signupButton{
+    background: #2563eb;
+    color: white;
+    border: 2px solid #2563eb;
+}
+
+.adminButton{
+    background: hsl(331, 91%, 52%);
+    color: white;
+    border: 2px solid hsl(331, 91%, 52%);
+}
+
+.formDeleteContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.deleteButton{
+    background: hsl(345, 91%, 51%);
+    color: white;
+    border: 2px solid hsl(345, 91%, 52%);
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    max-width: 175px;
+}
+
+h1[class="UserHeader"]{
+    text-align: center;
+    color: #ffffff;
+}
+
+div[class="allMessages"]{
+    display: flex;
+    flex-direction: column;
+    background: #8e8e8e;
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+div[class="messageContainer"],
+ a[class="messageContainer"]{
+    background: linear-gradient(90deg, #6924f3, #1a5cea);
+    padding: 1.5rem;
+    margin: 0.4rem;
+    border-radius: 3rem;
+    min-width: 440px;
+    max-height: 160px;
+}
+
+div[class="messageSecondaryContainer"]{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.2rem;
+}
+
+p[class="messageParagraph"]{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+}

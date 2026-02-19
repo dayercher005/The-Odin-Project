@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: Caveat;
+  src: local(Caveat), url(/Caveat-VariableFont_wght.ttf)
+}
+
+@font-face{
+  font-family: MomoSignature;
+  src: local(MomoSignature), url(/MomoSignature-Regular.ttf)
+}
+
+@theme{
+  --font-Caveat: Caveat;
+  --font-MomoSignature: MomoSignature;
+}

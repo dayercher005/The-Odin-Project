@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Mini-Message Board</title>
+  </head>
+  <body>
+
+    <h1><%= title %></h1>
+
+    <div class="indexPage">
+      <ul>
+          <% messages.map((message) => { %>
+              <div>
+                  <p><%= message.text %></p>
+                  <p><%= message.user %></p>
+                  <p><%= message.added %></p>
+              </div>
+          <% }) %>
+      </ul>
+    </div>
+
+    <a href="/newMessages" class="sendMessagesButton buttonStyling">Send a message!</a>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+/* General CSS Styling */
+
+:root{
+    --font-family: Roboto;
+    --white-color: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background:linear-gradient(#ffffff, #088cf1);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* CSS Styling for BattleShip Grids and Headers */
+
+h1[id="gameHeader"]{
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 1.5%;
+}
+
+h3[class="subHeader"]{
+    text-align: center;
+    font-family: var(--font-family);
+    margin-bottom: 2%;
+}
+
+div[id="battleFields"]{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#opponentGrid, #ownGrid{
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+}
+
+button[class="computerCellButton"], button[class="humanCellButton"]{
+    background: hsl(0, 0%, 100%);
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+div[id="buttonContainer"]{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    gap: 2%;
+}
+
+button[class="buttonStyles"]{
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    height: 45px;
+    width: 200px;
+    color: var(--white-color);
+    border: none;
+    border-radius: 7px;
+    align-self: center;
+}
+
+button[class="buttonStyles"]:hover, button[class="Ships"]:hover{
+    transform: translateY(-5px);
+    transition: 0.3s transform;
+}
+
+button[id="startButton"]{
+    background-color: hsl(124, 98%, 45%);
+}
+
+button[id="startButton"]:hover{
+    background-color: hsl(124, 98%, 40%);
+    box-shadow: 5px 5px 0.5em hsl(124, 33%, 43%);
+}
+
+button[id="randomButton"]{
+    background-color: hsl(24, 81%, 31%);
+}
+
+button[id="randomButton"]:hover{
+    background-color: hsl(24, 81%, 25%);
+    box-shadow: 5px 5px 0.5em hsl(29, 60%, 34%);
+}
+
+button[id="directionButton"]{
+    background-color: hsl(27, 85%, 50%);
+}
+
+button[id="directionButton"]:hover{
+    background-color: hsl(27, 85%, 45%);
+    box-shadow: 5px 5px 0.5em hsl(40, 53%, 50%);
+}
+
+div[id="shipButtonContainer"]{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+button[class="Ships"]{
+    font-family: Impact;
+    font-size:1.4rem;
+    border: none;
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 100%);
+    height: 70px;
+    width: 10vw;
+    max-width: 200px;
+}
+
+button[class="Ships"]:hover{
+    background-color: hsl(0, 0%, 90%);
+    box-shadow: 5px 5px 0.5em hsl(120, 1%, 31%);
+}
+
+dialog{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35%;
+    border-radius: 10px;
+    border: none;
+    width: 40vw;
+    max-width: 600px;
+    height: 20vh;
+    max-height: 300px;
+}
+
+div[id="gameEndText"]{
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 7%;
+    text-align: center;
+}
+
+button[id="restartButton"]{
+    background-color: hsl(287, 83%, 51%);
+    display: block;
+    margin: 0 auto;
+}
+
+button[id="restartButton"]:hover{
+    background-color: hsl(287, 83%, 45%);
+    box-shadow: 5px 5px 0.5em hsl(289, 86%, 61%);
+}

@@ -1,0 +1,73 @@
+:root{
+    --white-color: hsl(0, 100%, 100%);
+    --links-color: hsl(217, 98%, 59%);
+    --submit-color: hsl(145, 85%, 56%);
+    --messagesBackground: hsl(185, 83%, 72%);
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1rem; 
+}
+
+/* Styling for form.ejs page */
+
+body{
+    text-align: center;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+div[class="inputContainer"]{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+input{
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 0.35rem;
+}
+
+
+.buttonStyling{
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 0.5rem;
+}
+
+.sendMessagesButton{
+    background-color: var(--links-color);
+}
+
+.submitButton{
+    background-color: var(--submit-color);
+    
+}
+
+/* Styling for index.ejs page */
+
+div[class="indexPage"]{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: var(--messagesBackground);
+}
+
+.allMessagesButton{
+    background-color: var(--links-color);
+}

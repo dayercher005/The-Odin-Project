@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error Page</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="errorBody">
+    <div class="errorContainer">
+        <div class="errorCode">404</div>
+        <h1 class="errorMessage">Page Not Found</h1>
+        <p class="errorDescription">
+            Oops! The page you're looking for seems to have wandered off into the digital void. 
+            Let's get you back on track.
+        </p>
+        <ul>
+            <% error.map(error => {%>
+                <li><%= error.msg %></li>
+            <% })%>
+        </ul>
+        <a href="/" class="homeButton">Return Home</a>
+    </div>
+</body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create New Message</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="FormPage">
+
+    <form class="formContainer" action="/createNewMessage" method="POST">
+
+        <h1 class="formHeaderText">Create New Message</h1>
+
+        <div class="labelContainer">
+            <label for="message">Message <span class="asterisk">*</span class="asterisk"></label>
+            <textarea class="" id="message" name="message" placeholder="Draft your message..." type="textarea" required></textarea>
+        </div class="labelContainer">
+    <button type="submit">Create Message</button>
+    </form>
+
+</body>

@@ -1,0 +1,22 @@
+<nav>
+    <div class="navbarContainer">
+        <a href="/" class="logoText">Members Only</a>
+        
+        <div class="buttonContainer">
+            <a href="/log-in" class="button logButton">Log In</a>
+            <a href="/sign-up" class="button signupButton">Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+<div class="allMessages">
+    <% messages.map(message => {%>
+        <div class="messageContainer">
+            <div class="messageSecondaryContainer">
+                <p class="messageParagraph">********</p>
+                <p class="messageParagraph">********</p>
+            </div>
+            <p class="messageParagraph"><%= message.message %></p>
+        </div>
+    <% }) %>
+</div>

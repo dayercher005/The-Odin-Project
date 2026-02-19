@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="homepage">
+    <%- include('../partials/navbar', {navbarElements: navbarElements}) %>
+
+    <div class="indexContainer">
+      <%- include("../partials/errors.ejs") %>
+      <img class="videoGameImage" alt="Video Game Image" src="/images/game.png">
+
+      <div>
+        <p class="homepageText"><%= homepageText %></p>
+        <%- include('../partials/homeButtons', {navbarElements: navbarElements}) %>
+      </div>
+    </div>
+  </body>
+</html>

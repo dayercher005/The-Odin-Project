@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+<body>
+
+    <%- include('../partials/navbar', {navbarElements: navbarElements}) %>
+
+    <div class="categoriesSelectionContainer">
+        <h1 class="sidebarHeader">All Existing Game Categories </h1>
+        <div>
+            <ul class="categoriesSelection">
+            <% AllGames.map(games => { %>
+                <li class="sidebarLink"> <%= games.name %></li>
+            <% }); %>
+            </ul>
+        </div>
+    </div>
+
+    <form class="categoriesForm" action="/categories/<%= id %>/" method="POST">
+      <button id="categoriesButton" class="removeButton" type="submit">Delete Category</button>
+    </form>
+
+</body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>BattleShip</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="gameHeader">BattleShip Game</h1>
+    </header>
+    
+    <div id="mainContent">
+
+        <div id="battleFields">
+            <div id="HumanBoardContainer">
+                <h3 class="subHeader">Your GameBoard: </h3>
+                <div id="ownGrid"></div>
+            </div>
+
+            <div id="ComputerBoardContainer">
+                <h3 class="subHeader">Opponent's GameBoard: </h3>
+                <div id="opponentGrid"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="buttonContainer">
+        <button class="buttonStyles" id="directionButton">Change Direction</button>
+        <button class="buttonStyles" id="startButton">Start Game</button>
+        <button class="buttonStyles" id="randomButton">Randomize Ships</button>
+    </div>
+
+    <div id="shipButtonContainer">
+        <button class="Ships" id="Carrier">Carrier<br>Size: 5 </button>
+        <button class="Ships" id="BattleShip">BattleShip<br>Size: 4</button>
+        <button class="Ships" id="Destroyer">Destroyer<br>Size: 3</button>
+        <button class="Ships" id="Submarine">Submarine<br>Size: 3</button>
+        <button class="Ships" id="PatrolBoat">Patrol Boat<br>Size: 2</button>
+    </div>
+
+    <dialog id="endDialog">
+        <div id="gameEndText"></div>
+        <button class="buttonStyles" id="restartButton">Restart</button>
+    </dialog>
+
+</body>
+</html>

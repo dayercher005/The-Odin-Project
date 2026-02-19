@@ -1,0 +1,233 @@
+@font-face{
+    font-family: Roboto;
+    src: local(Roboto), url("/Roboto-VariableFont_wdth,wght.ttf");
+}
+
+:root{
+    --cardColor: hsl(0, 0%, 100%);
+    --inputColor: hsl(0, 3%, 94%);
+    --borderColor: hsl(180, 4%, 89%);
+    --borderFocusColor: hsl(208, 68%, 58%);
+    --submitButtonColor: hsl(118, 78%, 65%);
+    --submitHoverColor: hsl(118, 65%, 57%);
+    --sideDisplayColor: hsl(232, 24%, 30%);
+    --sideMargin: 2.5rem;
+    --segmentHoverColor: hsl(208, 68%, 45%);
+}
+
+.formSection{
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    min-width: 350px;
+    max-width: 600px;
+    margin: 2rem 0;
+    padding: 0.8rem;
+    border: 1px solid black;
+}
+
+.sectionHeader{
+    display: flex;
+    background-color: var(--cardColor);
+    align-items: center;
+    
+}
+
+h1{
+    font-family: Roboto;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 1% 0;
+}
+
+.inputSection{
+    display: flex;
+    flex-direction: column;
+    padding: 3.2%;
+}
+
+label, input{
+    font-family: Roboto;
+    font-size: 1.1em;
+    padding: 1.5%;
+    margin: 0;
+}
+
+input{
+    border-radius: 5px;
+    background-color: var(--inputColor);
+    border: 1px solid var(--borderColor);
+}
+
+textarea{
+    background-color: var(--inputColor);
+    padding: 2.5%;
+    min-height: 8rem;
+    font-size: 1.15rem;
+    font-family: Roboto;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--borderFocusColor);
+}
+
+.formSection, .inputSection, label, h1{
+    background-color: var(--cardColor);
+}
+
+.logoStyles{
+    height: 30px;
+    width: auto;
+    background-color: var(--cardColor);
+    padding: 2%;
+}
+
+.arrowLogoInactive{
+    background-color: var(--cardColor);
+    height: 3.2rem;
+    width: auto;
+    margin-left: auto;
+    transition: 0.2s transform
+}
+
+
+.arrowLogoActive{
+    background-color: var(--cardColor);
+    height: 3.2rem;
+    width: auto;
+    margin-left: auto;
+    transform: rotate(-180deg);
+    transition: 0.2s transform
+}
+
+.sectionVisibilityActive{
+    transition: 0.2s transform;
+    display: none;
+}
+
+.sectionVisibilityInactive{
+    transform-origin: top;
+    animation: expand 0.1s ;
+    display: flex;
+    flex-direction: column;
+}
+
+.applicationSection{
+    display: flex;
+    background-color: var(--cardColor);
+    width: 100%;
+    width: 775px;
+    height: 1050px;
+    margin-top: 3%;
+    box-shadow: 3px 2px 20px 5px hsl(0, 0%, 65%);
+}
+
+.applicationSection *{
+    background-color: var(--cardColor);
+}
+
+.submitButton{
+    background-color: var(--submitButtonColor);
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submitButton:hover{
+    background-color: var(--submitHoverColor);
+}
+
+.sideDisplay{
+    background-color: var(--sideDisplayColor);
+    flex-grow: 0.15;
+    min-width: 250px;
+}
+
+.sideDisplay *{
+    background-color: var(--sideDisplayColor);
+    padding: 0 5%;
+    color: var(--cardColor);
+}
+
+.contactDetailPortion{
+    display: flex;
+    align-items: center;
+}
+
+.contactHeader{
+    border-bottom: 5px solid var(--borderColor);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.mainDisplay{
+    flex: auto;
+}
+
+.mainDisplay *{
+    margin: 3%;
+}
+
+.displayName{
+    margin-top: 1.3rem;
+    margin-bottom: 0;
+    margin-left: var(--sideMargin);
+    font-size: 2.3rem;
+}
+
+.displayPosition{
+    margin-left: var(--sideMargin);
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.mainDisplayTitles{
+    border-bottom: 5px solid var(--sideDisplayColor);
+}
+
+.applicationLogos{
+    height: 1.05rem;
+    width: auto; 
+    margin: 0 2.5%;
+}
+
+.sideLogos{
+    margin: 0;
+}
+
+.companyText{
+    font-size: 1rem;
+}
+
+.positionText{
+    font-size: 1.2rem;
+    color: var(--borderFocusColor)
+}
+
+.segmentContainer{
+    background-color: var(--cardColor);
+}
+
+
+.submittedSegment{
+    font-family: Roboto;
+    background-color: var(--borderFocusColor);
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    flex-grow: 2;
+    color: var(--cardColor);
+}
+
+.segmentDiv{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    border-radius: 5px;
+    background-color: var(--borderFocusColor);
+}
+
+.segmentDiv *{
+    background-color: var(--borderFocusColor);
+}

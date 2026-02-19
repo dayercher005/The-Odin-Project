@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+<body>
+
+    <%- include('../partials/navbar', {navbarElements: navbarElements}) %>
+
+    <div class="categoriesSelectionContainer">
+        <h1 class="sidebarHeader">All Existing Game Categories </h1>
+        <div>
+            <ul class="categoriesSelection">
+            <% AvailableCategories.map(categories => { %>
+                <li class="sidebarLink"><a href="/categories/<%= categories.id %>"> <%= categories.category %> </a>
+            <% }); %>
+            </ul>
+        </div>
+    </div>
+
+</body>
+

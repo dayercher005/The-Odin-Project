@@ -1,0 +1,27 @@
+<nav>
+    <div class="navbarContainer">
+        <a href="/" class="logoText">Members Only</a>
+        
+        <h1 class="UserHeader">Welcome Back <%= user.name %>! </h1>
+
+        <div class="buttonContainer">
+            <a class="button signupButton" href="/createNewMessage">Create New Message</a>
+            <a class="button logButton" href="/log-out">Log Out</a>
+        </div>
+    </div>
+</nav>
+
+<div class="allMessages">
+    <% messages.map(message => {%>
+        <div class="messageContainer">
+            <div class="messageSecondaryContainer">
+                <p class="messageParagraph"><%= message.name%></p>
+                <p class="messageParagraph"><%= message.date.toISOString().split('T')[0] + ' ' + message.date.toTimeString().split(' ')[0] %></p>
+            </div>
+            <p class="messageParagraph"><%= message.message%></p>
+            <form class="formDeleteContainer" action="/" method="POST">
+                <button class="deleteButton button" type="submit">Delete</button>
+            </form>
+        </div>
+    <% }) %>
+</div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>To-Do List</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div id="sidebarContainer" class="sidebar">
+        <h2 id="TodoTitle">Todo List</h2>
+        <div id="ProjectTitleContainer">
+            <div id="ProjectsTitle">Projects</div>
+            <button id="addProjects">+</button>
+        </div>
+        <div id="ProjectList">
+
+        </div>
+    </div>
+
+        <dialog id="projectDialog">
+            <form>
+                <div class="Labels&Inputs">
+                    <label id="ProjectName" for="ProjectName" class="modalLabels">Project Name: </label>
+                    <input id="modalProjectNameInput" class="modalInput" type="text" required>
+                </div>
+                <div class="submitContainer">
+                    <input class="modalInput" id="submitProjectDialog" type="submit">
+                </div>
+                
+            </form>
+        </dialog>
+
+        <dialog id="todoDialog">
+            <form>
+                <div class="Labels&Inputs">
+                    <label for="Title" class="modalLabels">Title: </label>
+                    <input id="modalTodoTitleInput" class="modalInput" type="text">
+                </div>
+                <div class="Labels&Inputs">
+                    <label for="Description" class="modalLabels">Description: </label>
+                    <input id="modalTodoDescriptionInput" class="modalInput" type="text" required>
+                </div>
+                <div class="Labels&Inputs">
+                    <label for="Due Date" class="modalLabels">Due Date: </label>
+                    <input id="modalTodoDateInput" class="modalInput" type="date" required>
+                </div>
+                <div class="Labels&Inputs">
+                    <label for="Priority" class="modalLabels">Priority: </label>
+                    <select id="modalTodoPriorityInput" class="modalInput">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Not Urgent">Not Urgent</option>
+                    </select>
+                </div>
+                <input id="submitTodoDialog" type="submit">
+            </form>
+        </dialog>
+
+    <div id="mainContent"></div>
+</body>
+</html>
