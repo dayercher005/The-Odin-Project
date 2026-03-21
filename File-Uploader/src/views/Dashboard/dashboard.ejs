@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Ship</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <%- include('../partials/dashboardNavbar')%>
+
+    <div class="dashbordContainer">
+        <div class="dashboardHeader">
+            <h3> All Folders </h3>
+
+            <h5>Click on any Folder to view its contents!</h5>
+
+            <div>
+                <a class="button create" href="/create-folder">Create a New Folder</a>
+            </div>
+        </div>
+
+        <div class="folders-container">
+            <% if(locals.member){%>
+                <% member.folders.map(folder => { %>
+                    <a href="/dashboard/<%=folder.id%>" class="folder-container">
+                        <img class="folder-image" alt="folder-image" src="/images/folder.svg">
+                        <h3 class="folder-name"><%= folder.name %></h3>
+                    </a>
+                <%})%>
+            <%}%>
+        </div>
+        
+    </div>
+
+</body>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Folder Form</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+
+<body>
+
+    <div class="form-body">
+        
+        <div class="form-container">
+            
+            <a href="/dashboard/<%=folderParameters%>"><img class="arrow" src="/images/back.svg"></a>
+
+            <h1 class="form-header">Add Folder</h1>
+            
+            <form id="CreateFolder" action="/create-folder" method="POST">
+
+                <div class="form-group">
+                    <label for="name">Name of Folder <span>*</span></label>
+                    <input type="name" id="name" name="name" required>
+                </div>
+
+                <button class="submit" type="submit">Add New Folder</button>
+            </form>
+
+        </div>
+    </div>
+</body>

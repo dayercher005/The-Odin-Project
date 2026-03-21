@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Ship</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+
+<body>
+    <%- include('../partials/dashboardNavbar')%>
+
+    <div class="individual-file-container">
+        <a href="/dashboard/<%=folderParameters%>"><img class="arrow page" src="/images/back.svg"></a>
+        <h2>File Details</h2>
+        <div class="download-container button-container">
+            <div>
+                <a href="<%=publicURL%>?download" class="button create" download>Download File</a>
+            </div>
+            <form action="/dashboard/<%=folderParameters%>/<%=fileParameters%>" method="POST">
+                <button class="button delete" type="submit">Delete File</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="file-information">
+        <h3>Name of File: <%= fileName %></h3>
+        <h3>Size of File: <%= fileSize / 1000000 %>MB</h3>
+        <h3>Time of Upload: <%= date %></h3>
+    </div>
+
+</body>

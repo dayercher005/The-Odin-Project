@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log-In Form</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="form-body">
+
+    <div class="form-container">
+
+        <a href="/"><img class="arrow" src="/images/back.svg"></a>
+
+        <h1 class="form-header">Log In</h1>
+        
+        <form id="Log-In" action="/log-in" method="POST">
+
+            <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password <span>*</span></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button class="submit" type="submit">Log In</button>
+        </form>
+
+        <h3>New to File Crate? Click <a class="reference" href="/sign-up">here</a> to Create an Account instead.</h3>
+
+    </div>
+</body>

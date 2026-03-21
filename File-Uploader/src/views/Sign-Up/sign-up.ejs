@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="form-body">
+
+    <div class="form-container">
+
+        <a href="/"><img class="arrow" src="/images/back.svg"></a>
+        
+        <h1 class="form-header">Sign Up</h1>
+        
+        <form id="Sign-Up" action="/sign-up" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name <span>*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password <span>*</span></label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password <span>*</span></label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+
+            <button class="submit" type="submit">Sign Up</button>
+        </form>
+
+        <h3>Already a member? Click <a class="reference" href="/log-in">here</a>  to Log In instead.</h3>
+
+    </div>
+
+</body>

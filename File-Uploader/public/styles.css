@@ -1,0 +1,293 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+}
+
+body{
+    background: hsl(154, 63%, 56%);
+}
+
+/* General CSS Styling for Forms */
+
+.form-body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: rgb(255, 255, 255);
+    padding: 3.2rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-header{
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 0.8rem 0;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+input{
+    width: 90%;
+    padding: 10px 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-family: inherit;
+}
+
+span{
+    color: hsl(0, 98%, 56%);
+}
+
+.submit{
+    width: 97%;
+    padding: 14px;
+    background: hsl(208, 89%, 46%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 3rem 0;
+    transition: transform 0.2s ease;
+}
+
+.submit:hover{
+    background-color: hsl(208, 86%, 52%);
+    transform: translateY(-1.5px);
+}
+
+.reference{
+    color: hsl(208, 86%, 52%)
+}
+
+/* CSS Styling for Navbar, Homepage and Dashboard */
+
+nav{
+    background: hsl(0, 0%, 100%);
+    padding: 1.1rem 1.2rem;
+}
+
+.navbarContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.dashboardHeader{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: hsl(0, 0%, 15%);
+}
+
+.dashboard-header{
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.55rem;
+    margin: 4.2rem 0;
+}
+
+.button{
+    width: 100%;
+    padding: 0.8rem 1.45rem;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 0 0.4rem;
+}
+
+.button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(67, 67, 67, 0.6);
+}
+
+.log-Button{
+    background: #1ed888;
+    color: white;
+    border: 2px solid #1ed888;
+}
+
+.sign-Button{
+    background: hsl(0, 2%, 26%);
+    color: #1ed888;
+    border: 2px solid hsl(0, 2%, 26%);
+}
+
+.dashboard-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2.6rem 0;
+}
+
+.dashboard-images{
+    height: 11.5rem;
+    width: 11.5rem;
+    padding: 1.3rem;
+}
+
+.image-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 15rem;
+    border-radius: 15px;
+    padding: 0.8rem 1.1rem;
+    background: hsl(0, 0%, 100%);
+}
+
+.dashboard-secondary-text{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.dashboardHeader{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+    gap: 7rem;
+    align-items: center;
+}
+
+.create{
+    background-color: hsl(208, 89%, 46%);
+    width: 80%;
+}
+
+.folders-container{
+    background-color: hsla(0, 0%, 91%, 0.854);
+    width: 65%;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 4rem;
+}
+
+.folder-container{
+    display: flex;
+    gap: 0.7rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    border-bottom: 0.3rem solid rgb(76, 76, 76);
+    transition: 0.3s transform;
+}
+
+.folder-container:last-child{
+    border: none;
+}
+
+.folder-container:hover{
+    transform: translateY(-2.5px);
+}
+
+.folder-image{
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+.folder-name{
+    text-decoration: none;
+    color: hsl(0, 2%, 26%)
+}
+
+.delete{
+    background-color: hsl(343, 92%, 54%);
+}
+
+.file-link{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-bottom: 0.3rem solid rgb(76, 76, 76);
+    transition: 0.3s transform;
+}
+
+.file-link:hover{
+    transform: translateY(-2.5px);
+}
+
+.file-link:last-child{
+    border-bottom: none;
+}
+
+.file-container{
+    display: flex;
+    gap: 0.7rem
+}
+
+
+/**/
+
+.arrow{
+    width: 2.1rem;
+    height: 2.1rem;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 0.3rem;
+}
+
+.arrow:hover{
+    background-color: hsl(0, 0%, 80%);
+    transition: 0.2s ease-in-out;
+}
+
+.page:hover{
+    background-color: hsl(152, 62%, 43%);
+}
+
+.individual-file-container{
+    display: flex;
+    margin: 2.7rem auto;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.download{
+    background-color: hsl(208, 86%, 52%);
+}
+
+.file-information{
+    display: flex;
+    background-color:hsl(0, 0%, 100%);
+    padding: 3.5rem;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 35%;
+    margin: auto;
+    gap: 2.5rem;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    flex-basis: 400px;
+}

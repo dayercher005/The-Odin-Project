@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Ship</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <%- include('../partials/dashboardNavbar')%>
+
+    <div class="dashbordContainer">
+
+        <div class="dashboardHeader">
+
+            <a href="/dashboard"><img class="arrow page" src="/images/back.svg"></a>
+
+            <h3>Files in <%=folderName%></h3>
+
+            <div class="button-container">
+                <div>
+                    <a class="button create" href="<%=folderParameters%>/create-file">Create a New File</a>
+                </div>
+                <form action="/dashboard/<%=folderParameters%>" method="POST">
+                    <button class="button delete" type="submit">Delete Folder</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="folders-container">
+            <% if(locals.folderDetails){%>
+                <% folderDetails.files.map(file => { %>
+                    <a href="/dashboard/<%=folderParameters%>/<%=file.id%>" class="file-link">
+                        <div class="file-container">
+                            <img class="folder-image" alt="folder-image" src="/images/file.png">
+                            <h3 class="folder-name"><%= file.name %></h3>
+                        </div>
+                        <h3 class="folder-name"><%= file.size / 1000000 %>MB</h3>
+                    </a>
+                <%})%>
+            <%}%>
+        </div>
+        
+    </div>
+
+</body>
